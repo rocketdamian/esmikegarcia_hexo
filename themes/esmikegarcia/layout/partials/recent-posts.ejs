@@ -1,0 +1,26 @@
+<% if (site.posts.length > 0) { %>
+<div id="recent-posts">
+  <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+    <% site.posts.sort('date', -1).limit(10).each(post => { %>
+    <!-- <div class="recent-post-item">
+        <a href="<%=url_for(post.path)%>"><%=post.title%></a>
+        <time datetime="<%=post.date.toJSON()%>">
+          <%=date(post.date)%>
+        </time>
+      </div> -->
+
+    <div>
+      <div class="uk-card uk-card-default uk-card-body">
+        <a href="<%=url_for(post.path)%>">
+          <h3 class="uk-card-title"><%=post.title%></h3>
+        </a>
+        <time datetime="<%=post.date.toJSON()%>">
+          <%=date(post.date)%>
+        </time>
+      </div>
+    </div>
+
+    <% }); %>
+  </div>
+</div>
+<% } %>

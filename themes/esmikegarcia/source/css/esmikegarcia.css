@@ -1,0 +1,148 @@
+
+body {
+  margin: 0;
+}
+
+.page-title {
+  margin-left: 130px;
+}
+
+.page-content {
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 16px 24px;
+  min-height: 370px;
+  max-height: 370px;
+  overflow-y: auto;
+}
+
+.spotify-follow-badge {
+  background: #2ebd59;
+  padding: 14px 10px;
+  text-shadow: none;
+}
+
+.spotify-follow-badge:hover {
+  text-decoration: none;
+}
+
+.spotify-follow-badge i {
+  font-size: 18px;
+}
+
+.spotify-follow-badge span {
+  padding: 0px 12px;
+}
+
+.social-header {
+  position: absolute;
+  right: 44px;
+  top: 22px;
+  font-size: 22px;
+}
+
+.social-header .uk-iconnav li {
+  padding-left: 30px; 
+}
+
+.social-header .uk-iconnav li a {
+  color: #fff;
+  text-shadow: -2px 1px 2px hsla(0, 0%, 0%, 0.2), 0 0 18px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.social-header .uk-iconnav li a i {
+  vertical-align: middle;
+}
+
+.navbar-container-left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 50;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  -webkit-transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: background 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.navbar-left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: white;
+}
+
+.navbar-menu-label {
+  position: absolute;
+  top: 0;
+  margin: 10px 0px 20px 0;
+}
+
+.nav-menu-open > svg > rect:last-child, .nav-menu-open > svg > rect:nth-child(2){
+    width: 16px;
+    x: 2;
+}
+
+.navbar-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+@media (min-width: 568px) and (max-width: 1024px) and (orientation: landscape) {
+    .navbar-container {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.navbar-list {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 -15px;
+}
+
+.navbar-list-item {
+  margin: 18px;
+  padding: 6px;
+  font-size: 16px;
+  text-shadow: -2px 1px 2px hsla(0, 0%, 0%, 0.2), 0 0 18px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.navbar-list-item {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navbar-list-item:hover {
+    text-decoration: line-through;
+}
+
+.album-promo-text {
+  font-weight: 600;
+  color: #fff;
+  margin: 14px 58px 48px;
+  text-shadow: -2px 1px 2px hsla(0, 0%, 0%, 0.8), 0 0 18px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.9);
+  border-top: 4px solid;
+}

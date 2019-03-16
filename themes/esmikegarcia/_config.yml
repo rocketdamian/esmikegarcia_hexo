@@ -1,0 +1,23 @@
+
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  inicio: /
+  noticias: /noticias
+  biografía: /bio
+  tienda: /tienda
+  calendario: /calendario
+  media (prensa): /media
+  contacto: /contacto
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/uikit.css
+- /css/esmikegarcia.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/esmikegarcia.js
+- /js/uikit.min.js

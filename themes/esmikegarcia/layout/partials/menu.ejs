@@ -1,0 +1,11 @@
+<div id="left-nav" class="navbar-container-left uk-visible@m">
+  <div class="navbar-left">
+    <div class="navbar-container">
+      <ul class="navbar-list">
+        <% Object.keys(theme.menu).forEach(key => { %>
+          <li class="navbar-list-item"><a class="uk-link-reset" href="<%=theme.menu[key]%>"><%=key%></a></li>
+        <% }); %>
+      </ul>
+    </div>
+  </div>
+</div>

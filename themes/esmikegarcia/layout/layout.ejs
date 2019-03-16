@@ -1,0 +1,45 @@
+<%
+var pageTitle = page.title  || config.subtitle || 'Incio';
+if (is_archive()) pageTitle = 'Archives';
+if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+if (is_category()) pageTitle = 'Category: ' + page.category;
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+if (is_year()) pageTitle += ': ' + page.year;
+pageTitle += " - " + config.title ;
+%>
+
+<!DOCTYPE html>
+<html lang="<%=config.language%>">
+
+<head>
+  <meta charset="UTF-8">
+  <title><%=pageTitle%></title>
+  <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
+  <!-- stylesheets list from _config.yml -->
+  <% theme.stylesheets.forEach(url => { %>
+  <link rel="stylesheet" href="<%=url%>">
+  <% }); %>
+  <% } %>
+  <!-- <style>
+    <%- fa_css() %>
+  </style> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <%- partial('partials/social-header') %>
+  <%- partial('partials/menu') %>
+  <%- body %>
+
+  <% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
+  <!-- scripts list from theme config.yml -->
+  <% theme.scripts.forEach(url => { %>
+  <script src="<%=url%>"></script>
+  <% }); %>
+  <% } %>
+
+</body>
+
+</html>
