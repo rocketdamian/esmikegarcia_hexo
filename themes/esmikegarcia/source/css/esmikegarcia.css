@@ -1,6 +1,17 @@
 
 body {
   margin: 0;
+  font-family: 'Questrial', sans-serif!important;
+}
+
+h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
+  font-family: 'Questrial', sans-serif!important;
+}
+
+.modile-nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .page-title {
@@ -41,11 +52,33 @@ body {
   font-size: 22px;
 }
 
+.social-header-mobile {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 22px;
+}
+
 .social-header .uk-iconnav li {
   padding-left: 30px; 
 }
 
 .social-header .uk-iconnav li a {
+  color: #fff;
+  text-shadow: -2px 1px 2px hsla(0, 0%, 0%, 0.2), 0 0 18px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.social-header-mobile .uk-iconnav li a i {
+  vertical-align: middle;
+}
+
+.social-header-mobile .uk-iconnav li {
+  padding-left: 30px; 
+}
+
+.social-header-mobile .uk-iconnav li a {
   color: #fff;
   text-shadow: -2px 1px 2px hsla(0, 0%, 0%, 0.2), 0 0 18px rgba(0, 0, 0, 0.5), 0 0 8px rgba(0, 0, 0, 0.6);
 }

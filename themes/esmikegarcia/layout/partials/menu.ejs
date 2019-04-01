@@ -3,9 +3,36 @@
     <div class="navbar-container">
       <ul class="navbar-list">
         <% Object.keys(theme.menu).forEach(key => { %>
-          <li class="navbar-list-item"><a class="uk-link-reset" href="<%=theme.menu[key]%>"><%=key%></a></li>
+        <li class="navbar-list-item">
+          <a class="uk-link-reset" href="<%=theme.menu[key]%>"><%=key%></a>
+        </li>
         <% }); %>
       </ul>
     </div>
+  </div>
+</div>
+
+<nav class="uk-navbar uk-hidden@m modile-nav">
+  <div class="uk-navbar-left">
+    <a
+      class="uk-navbar-toggle"
+      uk-navbar-toggle-icon
+      href="#"
+      uk-toggle="target: #offcanvas-nav-primary"
+    ></a>
+  </div>
+</nav>
+
+<div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+    <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+    <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+      <% Object.keys(theme.menu).forEach(key => { %>
+      <li class="navbar-list-item">
+        <a class="uk-link-reset" href="<%=theme.menu[key]%>"><%=key%></a>
+      </li>
+      <% }); %>
+    </ul>
   </div>
 </div>
