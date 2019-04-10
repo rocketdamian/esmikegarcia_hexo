@@ -52,13 +52,21 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   font-size: 22px;
 }
 
-.social-header-mobile {
+.social-header-spotify {
   position: absolute;
-  bottom: 12px;
+  right: 44px;
+  top: 22px;
+  font-size: 22px;
+}
+
+.social-header-mobile {
+  position: fixed;
+  bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: 0 18px;
   font-size: 22px;
+  height: 44px;
 }
 
 .social-header .uk-iconnav li {
