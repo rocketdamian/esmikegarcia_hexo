@@ -29,7 +29,11 @@ pageTitle += " - " + config.title ;
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="page">
+
+  <div class="c-cursor">
+    <div class="c-cursor__pointer"></div>
+  </div>
 
   <%- partial('partials/social-header') %>
   <%- partial('partials/menu') %>
@@ -38,6 +42,7 @@ pageTitle += " - " + config.title ;
   <% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
   <!-- scripts list from theme config.yml -->
   <% theme.scripts.forEach(url => { %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="<%=url%>"></script>
   <% }); %>
   <% } %>
