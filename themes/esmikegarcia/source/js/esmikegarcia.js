@@ -122,4 +122,4 @@ const mouseCursor = new MouseCursor();
 // const magneticCursor = new MagneticCursor();
 
 mouseCursor.render();
-magneticCursor.render();
+// magneticCursor.render();
