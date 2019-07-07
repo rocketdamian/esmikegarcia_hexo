@@ -16,8 +16,11 @@ menu:
 stylesheets:
 - /css/uikit.css
 - /css/esmikegarcia.css
+- /css/fontawesome.css
+- /css/fontawesome-brands.css
 
 # scripts loaded in the end of the body
 scripts:
+- /js/tweenmax.js
 - /js/esmikegarcia.js
 - /js/uikit.min.js

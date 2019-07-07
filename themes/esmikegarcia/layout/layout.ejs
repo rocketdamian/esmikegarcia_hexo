@@ -15,7 +15,6 @@ pageTitle += " - " + config.title ;
   <meta charset="UTF-8">
   <title><%=pageTitle%></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
   <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
   <!-- stylesheets list from _config.yml -->
   <% theme.stylesheets.forEach(url => { %>
@@ -25,8 +24,6 @@ pageTitle += " - " + config.title ;
   <!-- <style>
     <%- fa_css() %>
   </style> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
 </head>
 
 <body id="page">
@@ -42,7 +39,6 @@ pageTitle += " - " + config.title ;
   <% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
   <!-- scripts list from theme config.yml -->
   <% theme.scripts.forEach(url => { %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="<%=url%>"></script>
   <% }); %>
   <% } %>

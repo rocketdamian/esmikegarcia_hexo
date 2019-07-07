@@ -1,11 +1,54 @@
+@font-face {
+  font-family: "Century Gothic Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Century Gothic Regular"), url("../fonts/GOTHIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Century Gothic Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Century Gothic Italic"), url("../fonts/GOTHICI.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Century Gothic Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Century Gothic Bold"), url("../fonts/GOTHICB.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Century Gothic Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Century Gothic Bold Italic"), url("../fonts/GOTHICBI.woff") format("woff");
+}
 
 body {
   margin: 0;
-  font-family: 'Questrial', sans-serif!important;
+  font-family: "Century Gothic Regular", sans-serif !important;
 }
 
-h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
-  font-family: 'Questrial', sans-serif!important;
+h1,
+.uk-h1,
+h2,
+.uk-h2,
+h3,
+.uk-h3,
+h4,
+.uk-h4,
+h5,
+.uk-h5,
+h6,
+.uk-h6 {
+  font-family: "Century Gothic Regular", sans-serif !important;
+}
+
+.uk-text-bold {
+  font-family: "Century Gothic Bold", sans-serif !important;
+  letter-spacing: 2px;
 }
 
 .modile-nav {
@@ -19,12 +62,18 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 }
 
 .page-content {
-  width: 70%;
+  width: 85%;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 16px 24px;
   min-height: 370px;
   max-height: 370px;
   overflow-y: auto;
+}
+
+@media (min-width: 960px) {
+  .page-content {
+    width: 70%;
+  }
 }
 
 .spotify-follow-badge {
@@ -72,7 +121,7 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 }
 
 .social-header .uk-iconnav li {
-  padding-left: 30px; 
+  padding-left: 30px;
 }
 
 .social-header .uk-iconnav li a {
@@ -85,7 +134,7 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 }
 
 .social-header-mobile .uk-iconnav li {
-  padding-left: 30px; 
+  padding-left: 30px;
 }
 
 .social-header-mobile .uk-iconnav li a {
@@ -127,9 +176,9 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   margin: 10px 0px 20px 0;
 }
 
-.nav-menu-open > svg > rect:last-child, .nav-menu-open > svg > rect:nth-child(2){
-    width: 16px;
-    x: 2;
+.nav-menu-open > svg > rect:last-child,
+.nav-menu-open > svg > rect:nth-child(2) {
+  width: 16px;
 }
 
 .navbar-container {
@@ -147,10 +196,10 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 }
 
 @media (min-width: 568px) and (max-width: 1024px) and (orientation: landscape) {
-    .navbar-container {
-        position: absolute;
-        bottom: 0;
-    }
+  .navbar-container {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .navbar-list {
@@ -170,12 +219,12 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 }
 
 .navbar-list-item {
-    transition: 0.3s;
-    cursor: pointer;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .navbar-list-item:hover {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .album-promo-text {
@@ -186,8 +235,6 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
   text-shadow: -2px 1px 2px hsla(0, 0%, 0%, 0.8), 0 0 18px rgba(0, 0, 0, 0.9), 0 0 8px rgba(0, 0, 0, 0.9);
   border-top: 3px solid;
 }
-
-
 
 .c-cursor {
   pointer-events: none;
@@ -208,7 +255,7 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 .c-cursor__pointer::before {
   background-color: rgb(240, 169, 17);
   border-radius: 50%;
-  content: '';
+  content: "";
   height: 100%;
   left: 0;
   position: absolute;
@@ -219,9 +266,8 @@ h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6 {
 .is-hover .c-cursor__pointer::before {
   opacity: 0.3;
   -webkit-transform: scale(3.5);
-          transform: scale(3.5);
+  transform: scale(3.5);
 }
-
 
 .c-magnetic span {
   display: inline-block;
