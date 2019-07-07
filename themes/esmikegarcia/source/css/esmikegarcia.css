@@ -1,8 +1,15 @@
 @font-face {
   font-family: "Century Gothic Regular";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 600;
   src: local("Century Gothic Regular"), url("../fonts/GOTHIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Century Gothic Regular";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Century Gothic Regular"), url("../fonts/GOTHICB.woff") format("woff");
 }
 
 @font-face {
@@ -10,13 +17,6 @@
   font-style: normal;
   font-weight: normal;
   src: local("Century Gothic Italic"), url("../fonts/GOTHICI.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Century Gothic Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Century Gothic Bold"), url("../fonts/GOTHICB.woff") format("woff");
 }
 
 @font-face {
@@ -29,6 +29,7 @@
 body {
   margin: 0;
   font-family: "Century Gothic Regular", sans-serif !important;
+  font-weight: 600;
 }
 
 h1,
@@ -44,6 +45,11 @@ h5,
 h6,
 .uk-h6 {
   font-family: "Century Gothic Regular", sans-serif !important;
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 800;
 }
 
 .uk-text-bold {
