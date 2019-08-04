@@ -279,3 +279,15 @@ strong {
   display: inline-block;
   pointer-events: none;
 }
+
+.home-background {
+  background-position: 80%;
+}
+
+.news-background {
+  background-position: 80%;
+}
+
+.contact-background {
+  background-position: 16%;
+}
