@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: EsMikeGarcia
+title: EsMikeGarcia en la web
 subtitle:
-description:
+description: "Músico, Compositor y Generador de contenido de la Ciudad de México. Mejor conocido por formar parte de la agrupación de PunkRock Barney Gombo."
 keywords:
 author: RocketDamian
 language:
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://esmikegarcia.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -81,3 +81,6 @@ deploy:
   type:
 
 all_minifier: true
+
+favicon:
+  small: /favicon.ico

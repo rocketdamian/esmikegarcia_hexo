@@ -1,49 +1,62 @@
-<%
-var pageTitle = page.title  || config.subtitle || 'Incio';
-if (is_archive()) pageTitle = 'Archives';
-if (is_tag()) pageTitle = 'Tag: ' + page.tag;
-if (is_category()) pageTitle = 'Category: ' + page.category;
-if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
-if (is_year()) pageTitle += ': ' + page.year;
-pageTitle += " - " + config.title ;
-%>
+<% var pageTitle = config.title + " | " + (page.title || config.subtitle || 'Incio'); if (is_archive()) pageTitle =
+'Archives'; if (is_tag()) pageTitle = 'Tag: ' + page.tag; if (is_category()) pageTitle = 'Category: ' + page.category;
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year; if (is_year()) pageTitle += ': ' + page.year; %>
 
 <!DOCTYPE html>
 <html lang="<%=config.language%>">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%=pageTitle%></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
-<head>
-  <meta charset="UTF-8">
-  <title><%=pageTitle%></title>
-  <!-- <%- autoCanonical(config, page) %> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
-  <!-- stylesheets list from _config.yml -->
-  <% theme.stylesheets.forEach(url => { %>
-  <link rel="stylesheet" href="<%=url%>">
-  <% }); %>
-  <% } %>
-  <!-- <style>
+    <!-- <meta name="description" content="<%=page.description || config.description%>" />
+    <meta name="robots" content="index, follow" /> -->
+
+    <!-- Schema.org markup for Google+ -->
+    <!-- <meta itemprop="name" content="<%=pageTitle%>" />
+    <meta itemprop="description" content="<%=page.description || config.description%>" />
+    <meta itemprop="image" content="<%=config.url + '/img/home_img.jpg'%>" /> -->
+
+    <!-- Twitter Card data -->
+    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@publisher_handle" />
+    <meta name="twitter:title" content="<%=pageTitle%>" />
+    <meta name="twitter:description" content="<%=page.description || config.description%>" />
+    <meta name="twitter:creator" content="@author_handle" /> -->
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <!-- <meta name="twitter:image:src" content="<%=config.url + '/img/home_img.jpg'%>" /> -->
+
+    <!-- Open Graph data -->
+    <!-- <meta property="og:title" content="<%=pageTitle%>" />
+    <meta property="og:url" content="<%=url%>" />
+    <meta property="og:image" content="<%=config.url + '/img/home_img.jpg'%>" />
+    <meta property="og:description" content="<%=page.description || config.description%>" />
+    <meta property="og:site_name" content="<%=config.title%>" />
+
+    <%- autoCanonical(config, page) %> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
+    <!-- stylesheets list from _config.yml -->
+    <% theme.stylesheets.forEach(url => { %>
+    <link rel="stylesheet" href="<%=url%>" />
+    <% }); %> <% } %>
+    <!-- <style>
     <%- fa_css() %>
   </style> -->
-</head>
+  </head>
 
-<body id="page">
+  <body id="page" class="33">
+    <div class="c-cursor">
+      <div class="c-cursor__pointer"></div>
+    </div>
 
-  <div class="c-cursor">
-    <div class="c-cursor__pointer"></div>
-  </div>
-
-  <%- partial('partials/social-header') %>
-  <%- partial('partials/menu') %>
-  <%- body %>
-
-  <% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
-  <!-- scripts list from theme config.yml -->
-  <% theme.scripts.forEach(url => { %>
-  <script src="<%=url%>"></script>
-  <% }); %>
-  <% } %>
-
-</body>
-
+    <%- partial('partials/social-header') %> <%- partial('partials/menu') %> <%- body %> <% if (theme.scripts !==
+    undefined && theme.scripts.length > 0) { %>
+    <!-- scripts list from theme config.yml -->
+    <% theme.scripts.forEach(url => { %>
+    <script src="<%=url%>"></script>
+    <% }); %> <% } %>
+  </body>
 </html>

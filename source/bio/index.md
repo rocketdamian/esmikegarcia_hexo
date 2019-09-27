@@ -2,6 +2,7 @@
 title: Biografía
 date: 2019-03-16 00:08:59
 backgroundImage: "../img/bio_bg.jpg"
+description: "Conoce la historia y los inicios de la carrera y proyectos de EsMikeGarcía"
 ---
 ¿Alguna vez les han pedido que se describan a si mismos?
 Suele ser difícil, sobre todo cuando te has tomado tan enserio la frase “No poner todos los huevos en la misma canasta” y en el caso de Mike García no es diferente y vaya que no miente cuando se describe como alguien que le gusta poner la cara en todos lados y no solo la cara, en muchos casos también la voz. 
