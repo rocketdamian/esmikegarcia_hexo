@@ -33,6 +33,7 @@ if (is_month()) pageTitle += ': ' + page.month + '/' + page.year; if (is_year())
     <meta property="og:image" content="<%=config.url + '/img/home_img.jpg'%>" />
     <meta property="og:description" content="<%=page.description || config.description%>" />
     <meta property="og:site_name" content="<%=config.title%>" />
+    <meta property="og:type" content="website" />
 
     <%- autoCanonical(config, page) %>
 
