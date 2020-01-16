@@ -7,8 +7,8 @@ title: EsMikeGarcia en la web
 subtitle:
 description: "Músico, Compositor y Generador de contenido de la Ciudad de México. Mejor conocido por formar parte de la agrupación de PunkRock Barney Gombo."
 keywords:
-author: RocketDamian
-language:
+author: EsMikeGarcia
+language: es
 timezone:
 
 # URL
@@ -27,6 +27,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - "placeholder"
 
 # Writing
 new_post_name: :title.md # File name of new posts

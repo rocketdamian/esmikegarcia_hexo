@@ -10,12 +10,12 @@
       </div> -->
 
     <div>
-      <div class="uk-card uk-card-default uk-card-body">
+      <div class="uk-card uk-card-small uk-card-default uk-card-body uk-card-secondary uk-card-hover">
         <a href="<%=url_for(post.path)%>">
           <h3 class="uk-card-title"><%=post.title%></h3>
         </a>
-        <time datetime="<%=post.date.toJSON()%>">
-          <%=date(post.date)%>
+        <time datetime="<%=post.date.toJSON()%>" class="uk-text-capitalize uk-text-small">
+          <%=date(post.date, "MMMM D, YYYY")%>
         </time>
       </div>
     </div>

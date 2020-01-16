@@ -10,31 +10,31 @@ if (is_month()) pageTitle += ': ' + page.month + '/' + page.year; if (is_year())
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
-    <!-- <meta name="description" content="<%=page.description || config.description%>" />
-    <meta name="robots" content="index, follow" /> -->
+    <meta name="description" content="<%=page.description || config.description%>" />
+    <meta name="robots" content="index, follow" />
 
     <!-- Schema.org markup for Google+ -->
-    <!-- <meta itemprop="name" content="<%=pageTitle%>" />
+    <meta itemprop="name" content="<%=pageTitle%>" />
     <meta itemprop="description" content="<%=page.description || config.description%>" />
-    <meta itemprop="image" content="<%=config.url + '/img/home_img.jpg'%>" /> -->
+    <meta itemprop="image" content="<%=config.url + '/img/home_img.jpg'%>" />
 
     <!-- Twitter Card data -->
-    <!-- <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@publisher_handle" />
     <meta name="twitter:title" content="<%=pageTitle%>" />
     <meta name="twitter:description" content="<%=page.description || config.description%>" />
-    <meta name="twitter:creator" content="@author_handle" /> -->
+    <meta name="twitter:creator" content="@author_handle" />
     <!-- Twitter summary card with large image must be at least 280x150px -->
-    <!-- <meta name="twitter:image:src" content="<%=config.url + '/img/home_img.jpg'%>" /> -->
+    <meta name="twitter:image:src" content="<%=config.url + '/img/home_img.jpg'%>" />
 
     <!-- Open Graph data -->
-    <!-- <meta property="og:title" content="<%=pageTitle%>" />
+    <meta property="og:title" content="<%=pageTitle%>" />
     <meta property="og:url" content="<%=url%>" />
     <meta property="og:image" content="<%=config.url + '/img/home_img.jpg'%>" />
     <meta property="og:description" content="<%=page.description || config.description%>" />
     <meta property="og:site_name" content="<%=config.title%>" />
 
-    <%- autoCanonical(config, page) %> -->
+    <%- autoCanonical(config, page) %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>

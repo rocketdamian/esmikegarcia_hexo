@@ -67,6 +67,11 @@ strong {
   margin-left: 130px;
 }
 
+.page-content.news {
+  min-height: 70%;
+  max-height: 70%;
+}
+
 .page-content {
   width: 85%;
   background-color: rgba(0, 0, 0, 0.6);

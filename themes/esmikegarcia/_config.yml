@@ -1,15 +1,15 @@
 
 # html lang
-language: en
+language: es
 
 # main menu navigation
 menu:
   inicio: /
   noticias: /noticias
   biografía: /bio
-  tienda: /tienda
+  tienda: /#
   calendario: /calendario
-  media (prensa): /media
+  media (prensa): /#
   contacto: /contacto
 
 # stylesheets loaded in the <head>
